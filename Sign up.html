@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="sign up.css">
+</head>
+
+<body>
+    <div class="menu">
+        <img src="RNP.png" alt="">
+        <nav>
+            <ul>
+                <li><a href="Home.html">HOME</a></li>
+                <li><a href="#">SERVICE</a>
+                    <ul>
+                        <li><a href="drivinng categories.html">Driving License Registration</a></li>
+                        <li><a href="Traffic.html">Traffic</a></li>
+                        <li><a href="Driving License Result.html">Driving license Exam Result</a></li>
+                    </ul>
+                </li>
+                <li><a href="About.html">ABOUT</a>
+                </li>
+            </ul>
+        </nav>
+
+        <input type="submit" value="Log in" id="btn">
+    </div>
+    <nav>
+    </nav>
+    <div class="co">
+        <center>
+            <h2><Span>Sign</Span> up</h2> <br><br>
+            <form name="myform" action="submitt.html" onsubmit="add()">
+                <div class="getform">
+
+                    <input type="text" name="username" placeholder="Username" required>
+                </div>
+                <div class="getform">
+
+                    <input type="email" name="email" placeholder="@email" required>
+                </div>
+                <div class="getform">
+                    <input type="text" name="contact" placeholder="Contacts" required>
+                </div>
+                <div class="getform">
+                    <input type="text" name="ID" placeholder="Your ID" required>
+                </div>
+                <div class="getform">
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="getform">
+                    <input type="password" name="Confirm" placeholder="Confirm password" required>
+                </div>
+                <select>
+                    <option value="">Categories</option>
+                    <option value="">Provisional</option>
+                    <option value="">Divinitive</option>
+                    <option value="">Not yet</option>
+
+                </select>
+                <select>
+                    <option value="">District</option>
+                    <option value="">Rubavu</option>
+                    <option value="">Ganke</option>
+                    <option value="">Rulindo</option>
+                    <option value="">Nyabihu</option>
+                    <option value="">Nyaruguru</option>
+                    <option value="">Gicumbi</option>
+                    <option value="">Huye</option>
+                    <option value="">Rusizi</option>
+                    <option value="">Other</option>
+                </select>
+                <select name="sex" id="sex">
+                    <option value="">Enter sex</option>
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                </select>
+           
+            <div class="btn">
+                <input type="submit" value="Sign in"> <br> <br>
+                <p>Account?<a href="Log in.html">Log in</a></p>
+            </div>
+        </form>
+    </div>
+<script>
+    function add(){
+        let input = document.forms["myform"]["username","email","contact","ID","password","Confirm"].value
+        if(input == ""){
+            alert("Please Fill out")
+        }
+    }
+</script>
+</body>
+
+</html>

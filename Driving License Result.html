@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driving License Exam Result</title>
+    <link rel="stylesheet"href="Driving License Result.css">
+</head>
+
+<body>
+    <div class="menu">
+        <img src="RNP.png" alt="">
+        <nav>
+            <ul>
+                <li><a href="Home.html">HOME</a></li>
+                <li><a href="#">SERVICE</a>
+                    <ul>
+                        <li><a href="drivinng categories.html">Driving Categories</a></li>
+                        <li><a href="Traffic.html">Traffic</a></li>
+                        <li><a href="Driving License Result.html">Driving license Exam Result</a></li>
+                    </ul>
+                </li>
+                <li><a href="About.html">ABOUT</a>
+                </li>
+            </ul>
+        </nav>
+        <form action="Log in.html">
+            <input type="submit" value="Log in" id="btn">
+        </form>
+    </div>
+    <div class="srch">
+        <input type="search" placeholder="your search">
+    </div>
+    <div class="doc">
+        <h2>Drivining License And Examination Result</h2> <br> <br>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+    </div>
+    <table id="myTable">
+        <tr class="header">
+            
+            <th>Name</th>
+            <th>Index Number</th>
+            <th>Categories</th>
+
+        </tr>
+        <tr>
+        
+            <td>ABIZERA Moise</td>
+            <td>001</td>
+            <td>Divinitive</td>
+        </tr>
+        <tr>
+            <td>Keza Obeliuxe</td>
+            <td>002</td>
+            <td>Provisional</td>
+        </tr>
+        <tr>
+        
+            <td>Izerima Hakimun</td>
+            <td>003</td>
+            <td>Divinitive</td>
+        </tr>
+        <tr>
+            <td>Koniglich Essen</td>
+            <td>004</td>
+            <td>Divinitive</td>
+        </tr>
+        <tr>
+        
+            <td>hatangimana john</td>
+            <td>004</td>
+            <td>Provisional</td>
+        </tr>
+        <tr>
+        
+            <td>Niyibizi David</td>
+            <td>005</td>
+            <td>Divinitive</td>
+        </tr>
+        <tr>
+    
+            <td>Uwizeyimana john</td>
+            <td>006</td>
+            <td>provitional</td>
+        </tr>
+        <tr>
+    
+            <td>Kwizerimana Leo</td>
+            <td>007</td>
+            <td>Divinitive</td>
+        </tr>
+        <tr>
+    
+            <td>Uwizeye Adeline</td>
+            <td>008</td>
+            <td>Divinitive</td>
+        </tr>
+        <tr>
+    
+            <td>Uwiduhaye Joseph</td>
+            <td>009</td>
+            <td>Divinitive</td>
+        </tr>
+        <tr>
+    
+            <td>umwiza Dorcas</td>
+            <td>010</td>
+            <td>Divinitive</td>
+        </tr>
+        <tr>
+    
+            <td>tumukunde Muhoza</td>
+            <td>011</td>
+            <td>Provisional</td>
+        </tr>
+        <tr>
+    
+            <td>Nyiramirimo Odette</td>
+            <td>012</td>
+            <td>Divinitive</td>
+        </tr>
+        <tr>
+    
+            <td>Nizeyimana Patrick</td>
+            <td>0013</td>
+            <td>Divinitive</td>
+        </tr>
+        <tr>
+    
+            <td>Niyonkuru Tresor</td>
+            <td>014</td>
+            <td>Provisional</td>
+        </tr>
+        <tr>
+    
+            <td>Niyonzima  Amini Glory</td>
+            <td>015</td>
+            <td>Divinitive</td>
+        </tr>
+        <tr>
+    
+            <td>Ngororani Samuel</td>
+            <td>016</td>
+            <td>Divinitive</td>
+        </tr>
+        <tr>
+    
+            <td>Noga david</td>
+            <td>017</td>
+            <td>Provisional</td>
+        </tr>
+        <tr>
+    
+            <td>Nishimwe Liliane</td>
+            <td>018</td>
+            <td>Provisional</td>
+        </tr>
+        <tr>
+    
+            <td>Muhayimana Augastin</td>
+            <td>019</td>
+            <td>Divinitive</td>
+        </tr>
+        <tr>
+    
+            <td>Muntoni Jolie</td>
+            <td>020</td>
+            <td>Provisional</td>
+        </tr>
+        <tr>
+    
+            <td>kwizerimana Ntwari Kevin</td>
+            <td>021</td>
+            <td>Divinitive</td>
+        </tr>
+        <tr>
+    
+            <td>Mazimaka Eva</td>
+            <td>022</td>
+            <td>Divinitive</td>
+        </tr>
+        <tr>
+    
+            <td>irasubiza divin Prince</td>
+            <td>023</td>
+            <td>Divinitive</td>
+        </tr>
+        <tr>
+    
+            <td>ishimwe Plan Dedieu</td>
+            <td>024</td>
+            <td>Provisional</td>
+        </tr>
+        <tr>
+    
+            <td>Irankunda Patient</td>
+            <td>025</td>
+            <td>Divinitive</td>
+        </tr>
+    </table>
+
+    <script>
+        function myFunction() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

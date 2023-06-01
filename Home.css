@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body {
+    background-image: url(Coat_of_arms_of_Rwanda.svg);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 370px 90px;
+    background-color: #ccc;
+}
+
+nav {
+    display: flex;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    /* box-shadow: 0px 2px #ccc; */
+    background-color: rgb(16, 51, 87);
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px; */
+}
+
+nav li {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    /* gap: 1000px; */
+}
+
+nav ul ul {
+    position: absolute;
+    display: none;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul ul li {
+    width: 200px;
+    margin-left: -25px;
+    background-color: rgb(16, 51, 87);
+    /* opacity: 0.8; */
+    border-radius: 1px;
+
+}
+
+nav ul ul li :hover {
+
+    color: white;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: black;
+    width: 30px;
+    padding: 0px 0px 3px;
+
+}
+
+input[type="submit"] {
+    margin-right: 35px;
+    padding: 17px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+input[type="submit"]:hover {
+    transform: scale(.9);
+}
+
+.srch {
+    margin-top: 63px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+img {
+    width: 90px;
+    margin-left: 25px;
+    object-fit: contain;
+}
+
+.srch input {
+    position: relative;
+    background-image: url(magnifying-glass.svg);
+    background-repeat: no-repeat;
+    background-size: 45px;
+    background-position: 10px 10px;
+    /* background-size: 40px;  */
+    padding-left: 70px;
+    border: 1px solid #ccc;
+    border-radius: 10PX;
+    width: 700px;
+    height: 70px;
+    margin: 20px;
+    outline: none;
+}
+
+.end p {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* .menu  ul li a::before{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background-color: black;
+    transition: 1s ease-in-out;
+
+}
+.menu ul li:hover a::before{
+    width: 55%;
+} */
+.footer {
+    position: absolute;
+    top: 100%;
+    bottom: 3px;
+    width: 100%;
+
+}
+
+.header {
+    float: left;
+    margin: 20px;
+    /* display: flex; */
+}

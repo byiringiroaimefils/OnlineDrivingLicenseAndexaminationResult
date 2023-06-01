@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-in</title>
+    <link rel="stylesheet" href="Log in .css">
+</head>
+
+<body>
+    <div class="menu">
+        <img src="RNP.png" alt="">
+        <nav>
+            <ul>
+                <li><a href="Home.html">HOME</a></li>
+                <li><a href="#">SERVICE</a>
+                    <ul>
+                        <li><a href="drivinng categories.html">Driving Categories</a></li>
+                        <li><a href="Traffic.html">Traffic</a></li>
+                        <li><a href="Driving License Result.html">Driving license Exam Result</a></li>
+                    </ul>
+                </li>
+                <li><a href="About.html">ABOUT</a>
+                </li>
+            </ul>
+        </nav>
+        <form action="/Log in.html">
+            <input type="submit" value="Log in" id="btn">
+        </form>
+    </div>
+    <div class="box">
+        <form   name="myform" action="" onsubmit="add()">
+            <h3> <span> Log </span>in</h3> <br>
+            <input type="text" name="username" placeholder="Username" id="Username" required><br>
+            <input type="email" name="email" placeholder="Email" id="email" required><br>
+            <input type="text"  name="contact"  placeholder="ID Number" id="ID Number" required><br>
+            <input type="password" name="password" placeholder="Password" id="Password" required><br>
+            <p style="margin-left: 200px;margin-top: -25px"><a href="#">forgotpassword</a></p> <br>
+            <input type="submit" value="Log In">
+            <p>No account?<a href="Sign up.html">create one</a></p>
+        </form>
+    </div>
+
+    <script>
+        // function add() {
+        //     let input = document.forms["myform"]["username", "email", "contact", "password"].value
+        //     if (input == "") {
+        //         alert("Please Fill out")
+        //     }
+        // }
+    </script>
+</body>
+
+</html>
